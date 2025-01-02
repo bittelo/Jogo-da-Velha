@@ -76,7 +76,7 @@ int main() {
             ganhador == PX;
             break;
         }
-        // dar commit dia 03/01
+        
         
         
         tabuleiro[linha][coluna] = atual;
@@ -95,5 +95,5 @@ int main() {
 
     return 0;
 
-    // eu amo a hevellyn 
+    
 }
