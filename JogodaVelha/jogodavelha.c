@@ -4,12 +4,14 @@
 #define qtdlinhas 3
 #define qtdcolunas 3
 #define charp '_'
+#define empate 'E'
 
 int main() {
     int linha, coluna, posicao;
     int cont = 0;
     char tabuleiro[qtdlinhas][qtdcolunas];
     char atual =PX;
+    char ganhador = empate; 
 
    
     for (linha = 0; linha < qtdlinhas; linha++) {
@@ -48,9 +50,38 @@ int main() {
                 continue;
         }
 
+
+        for(linha = 0; linha < qtdlinhas; linha +=1){
+            if(tabuleiro[linha][0] == PX && tabuleiro [linha][1] == PX && tabuleiro [linha][2] == PX){
+            ganhador == PX;
+                break;
+        }
+        
+    }
+
+        for(coluna = 0; coluna < qtdcolunas; coluna +=1){
+            if(tabuleiro[0][coluna] == PX && tabuleiro [0][coluna] == PX && tabuleiro [0][coluna] == PX){
+                ganhador == PX;
+                    break;
+            
+            }   
+        }
+        
+        if(tabuleiro[0][0] == PX && tabuleiro [1][1] == PX && tabuleiro [2][2] == PX){
+            ganhador == PX;
+            break;
+        }
+
+        if(tabuleiro[0][2] == PX && tabuleiro [1][1] == PX && tabuleiro [2][0] == PX){
+            ganhador == PX;
+            break;
+        }
+        // dar commit dia 03/01
+        
         
         tabuleiro[linha][coluna] = atual;
-            cont += 1;
+
+        cont += 1;
             
         if (cont % 2 == 0){
             atual = PX;
@@ -63,4 +94,6 @@ int main() {
         }
 
     return 0;
+
+    // eu amo a hevellyn 
 }
