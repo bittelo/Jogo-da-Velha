@@ -48,20 +48,20 @@ int main() {
 
         for (linha = 0; linha < qtdlinhas; linha++) {
             if (tabuleiro[linha][0] == atual && tabuleiro[linha][1] == atual && tabuleiro[linha][2] == atual) {
-                ganhador = atual;
+                ganhador = atual; // verifica se em alguma linha o jogador px ganhou
                 break;
             }
         }
 
         for (coluna = 0; coluna < qtdcolunas; coluna++) {
             if (tabuleiro[0][coluna] == atual && tabuleiro[1][coluna] == atual && tabuleiro[2][coluna] == atual) {
-                ganhador = atual;
+                ganhador = atual; // verifica se em alguma coluna o jogador px ganhou 
                 break;
             }
         }
 
         if (tabuleiro[0][0] == atual && tabuleiro[1][1] == atual && tabuleiro[2][2] == atual) {
-            ganhador = atual;
+            ganhador = atual; // verifica diagonal principal
             break;
         }
 
