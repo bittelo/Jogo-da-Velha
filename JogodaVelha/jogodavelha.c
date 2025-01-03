@@ -9,13 +9,13 @@
 int main() {
     int linha, coluna, posicao;
     int cont = 0;
-    char tabuleiro[qtdlinhas][qtdcolunas];
+    char tabuleiro[qtdlinhas][qtdcolunas]; 
     char atual = PX;
     char ganhador = empate;
 
     for (linha = 0; linha < qtdlinhas; linha++) {
         for (coluna = 0; coluna < qtdcolunas; coluna++) {
-            tabuleiro[linha][coluna] = charp;
+            tabuleiro[linha][coluna] = charp; // Define '-' como espaço para ser preenchido
         }
     }
 
@@ -23,7 +23,7 @@ int main() {
         printf("\nTabuleiro atual:\n");
         for (linha = 0; linha < qtdlinhas; linha++) {
             for (coluna = 0; coluna < qtdcolunas; coluna++) {
-                printf("%c ", tabuleiro[linha][coluna]);
+                printf("%c ", tabuleiro[linha][coluna]); // Mostra o tabuleiro atual
             }
             printf("\n");
         }
