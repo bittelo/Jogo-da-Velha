@@ -72,7 +72,7 @@ int main() {
 
         cont++;
         if (cont == 9) {
-            break;
+            break; // se o contador chegou em 9 e nenhuma vitória foi contabilizada, significa que o jogo foi empate
         }
 
         atual = (atual == PX) ? PO : PX;
