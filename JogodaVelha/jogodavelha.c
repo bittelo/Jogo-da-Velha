@@ -31,7 +31,7 @@ int main() {
         printf("\nJogador %c, faça sua jogada (1-9):\n", atual);
         scanf("%d", &posicao);
 
-        if (posicao < 1 || posicao > 9) {
+        if (posicao < 1 || posicao > 9) { // as posições são dadas como números inteiros, então o jogador é obrigado a escolher um numero de 1 a 9
             printf("Posição inválida! Escolha um número entre 1 e 9.\n");
             continue;
         }
@@ -41,7 +41,7 @@ int main() {
 
         if (tabuleiro[linha][coluna] != charp) {
             printf("Essa posição já foi preenchida, escolha outra.\n");
-            continue;
+            continue; // se a jogada é feita em uma casa que é diferente de '-', ela ja está preenchida, portanto não é possivel realizar a jogada
         }
 
         tabuleiro[linha][coluna] = atual;
